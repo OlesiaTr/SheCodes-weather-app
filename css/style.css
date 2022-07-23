@@ -1,0 +1,107 @@
+body {
+  color: #dcd7c9;
+  background-color: #dcd7c9;
+  text-align: center;
+  font-family: "Caveat", cursive;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+.weekday {
+  font-family: "Patrick Hand", cursive;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #dcd7c9;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover,
+a:focus {
+  color: #f1d00a;
+}
+
+input {
+  color: #dcd7c9;
+  border-color: #dcd7c9;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:hover {
+  color: #f1d00a;
+  border-color: #f1d00a;
+}
+
+.container {
+  width: 500px;
+  padding: 0;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imgs/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-text {
+  padding: 100px;
+}
+
+.input-form {
+  margin-bottom: 20px;
+}
+
+.city-date-info {
+  margin-bottom: 50px;
+}
+
+.city-info {
+  margin-bottom: 10px;
+}
+
+.forecast {
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.svg-weather,
+.weekly-temperature {
+  margin-bottom: 10px;
+}
