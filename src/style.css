@@ -3,6 +3,7 @@ body {
   background-color: #dcd7c9;
   text-align: center;
   font-family: "Caveat", cursive;
+  padding-top: 20px;
 }
 
 p,
@@ -41,6 +42,15 @@ img {
   display: block;
 }
 
+ul {
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: #dcd7c9;
@@ -55,7 +65,6 @@ a:focus {
 input {
   color: #dcd7c9;
   border-color: #dcd7c9;
-
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -65,9 +74,13 @@ input:hover {
 }
 
 .container {
-  width: 500px;
+  width: 415px;
   padding: 0;
   margin: 0 auto;
+  border-radius: 40px;
+  border: 1px solid #31223c;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
 
   background-image: linear-gradient(
       to right,
@@ -80,8 +93,31 @@ input:hover {
   background-size: cover;
 }
 
+.svg-links {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 25px;
+}
+
+.svg-img {
+  fill: #f1d00a;
+  opacity: 0.8;
+}
+
+.main-window {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 40px;
+}
+
 .main-text {
-  padding: 100px;
+  text-transform: capitalize;
+}
+
+.degrees-choice {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .input-form {
@@ -96,12 +132,47 @@ input:hover {
   margin-bottom: 10px;
 }
 
-.forecast {
-  margin-bottom: 10px;
-  letter-spacing: 3px;
+.weather-forecast {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+  font-weight: 700;
 }
 
-.svg-weather,
-.weekly-temperature {
+.forecast__date {
   margin-bottom: 10px;
+}
+
+.weather-forecast .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast .col {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forecast__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.forecast__icon,
+.forecast__temp {
+  border: 2px solid #f1d00a;
+  border-radius: 15px;
+  border-left: none;
+  border-right: none;
+}
+
+.forecast__icon {
+  border-bottom: none;
+}
+
+.forecast__temp {
+  border-top: none;
 }

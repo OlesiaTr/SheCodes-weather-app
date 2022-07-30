@@ -18,22 +18,40 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="main-window">
+      <section>
+        <ul class="svg-links">
+          <li>
+            <svg class="svg-img" width="40" height="40">
+              <use href="./imgs/symbol-defs.svg#icon-wind"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="svg-img" width="40" height="40">
+              <use href="./imgs/symbol-defs.svg#icon-drupal"></use>
+            </svg>
+          </li>
+        </ul>
+        <ul class="svg-links">
+          <li id="wind-speed">4.3 m/s</li>
+          <li id="humidity">63%</li>
+        </ul>
+      </section>
+      <section class="main-window">
+        <div class="main-text">
+          <h1 id="temp">27°C</h1>
+          <h2 id="weather">Partly cloudy</h2>
+        </div>
         <div class="degrees-choice">
           <span>
             <a href="" id="celsius">°C</a> | <a href="" id="fahrenheit">°F</a>
           </span>
         </div>
-        <div class="main-text">
-          <h1 id="temp">+27</h1>
-          <h2 id="weather">Partly cloudy</h2>
-        </div>
-      </div>
+      </section>
 
       <div class="input-form">
         <form id="search-form">
@@ -68,32 +86,33 @@
         </div>
       </div>
 
-      <div class="forecast">
-        <div class="row weekday">
-          <div class="col">Mon</div>
-          <div class="col">Tue</div>
-          <div class="col">Wed</div>
-          <div class="col">Thu</div>
-          <div class="col">Fri</div>
-        </div>
-        <hr />
-        <div class="row svg-weather">
-          <div class="col">🔆</div>
-          <div class="col">🔆</div>
-          <div class="col">🌤️</div>
-          <div class="col">🌤️</div>
-          <div class="col">🔆</div>
-        </div>
+      <div class="weather-forecast" id="forecast"></div>
 
-        <div class="row weekly-temperature">
-          <div class="col">18°/<strong>29°</strong></div>
-          <div class="col">17°/<strong>32°</strong></div>
-          <div class="col">18°/<strong>28°</strong></div>
-          <div class="col">17°/<strong>28°</strong></div>
-          <div class="col">16°/<strong>29°</strong></div>
-        </div>
-        <hr />
-      </div>
+      <!-- <div class="forecast" id="forecast">
+        <ul class="row weekday">
+          <li class="col each-day">Mon</li>
+          <li class="col each-day">Tue</li>
+          <li class="col each-day">Wed</li>
+          <li class="col each-day">Thu</li>
+          <li class="col each-day">Fri</li>
+        </ul>
+
+        <ul class="row svg-weather">
+          <li class="col each-icon">🔆</li>
+          <li class="col each-icon">🔆</li>
+          <li class="col each-icon">🌤️</li>
+          <li class="col each-icon">🌤️</li>
+          <li class="col each-icon">🔆</li>
+        </ul>
+
+        <ul class="row weekly-temperature">
+          <li class="col each-temp"><strong>29°</strong></li>
+          <li class="col each-temp"><strong>32°</strong></li>
+          <li class="col each-temp"><strong>28°</strong></li>
+          <li class="col each-temp"><strong>28°</strong></li>
+          <li class="col each-temp"><strong>29°</strong></li>
+        </ul>
+      </div> -->
       <footer>
         <p>
           <a href="http://github.com/OlesiaTr/SheCodes-weather-app"
@@ -103,6 +122,6 @@
         </p>
       </footer>
     </div>
-    <script src="./css/index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
