@@ -73,6 +73,11 @@ input:hover {
   border-color: #f1d00a;
 }
 
+input.custom {
+  font-weight: 600;
+  font-size: large;
+}
+
 .container {
   width: 415px;
   padding: 0;
@@ -139,10 +144,6 @@ input:hover {
   font-weight: 700;
 }
 
-.forecast__date {
-  margin-bottom: 10px;
-}
-
 .weather-forecast .row {
   display: flex;
   flex-wrap: nowrap;
@@ -156,9 +157,8 @@ input:hover {
   flex-wrap: wrap;
 }
 
-.forecast__icon {
-  width: 40px;
-  height: 40px;
+.forecast__date {
+  margin-bottom: 10px;
 }
 
 .forecast__icon,
@@ -170,6 +170,8 @@ input:hover {
 }
 
 .forecast__icon {
+  width: 40px;
+  height: 40px;
   border-bottom: none;
 }
 
